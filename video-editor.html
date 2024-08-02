@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor - AG Studios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Logo & Nav bar -->
+    <header>
+        <nav class="nav_bar">
+            <div class="nav_left">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="video-editor.html">Video Editor</a>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" class="img_logo">
+            </div>
+            <div class="nav_right">
+                <a class="nav-link" href="photo-editor.html">Photo Editor</a>
+                <a class="nav-link" href="about-us.html">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video Container -->
+    <div>
+        <video autoplay loop muted playsinline  class="video_loop">
+            <source src="video/Page3Video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main>
+        <!-- Photo and text section -->
+        <div class="text_section">
+            <div class="row">
+                <div class="col-md-6 photo-container">
+                    <img src="images/page3Photo1.jpg" alt="Photo" class="img-fluid photo">
+                </div>
+                <div class="col-md-6 text-container">
+                    <p class="text-background" >Elevate your social media presence with professional video editing. From engaging reels to captivating stories, our editing services will help you connect with your audience like never before.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 photo-container">
+                    <img src="images/page3Photo2.jpg" alt="Photo" class="img-fluid photo">
+                </div>
+                <div class="col-md-6 text-container">
+                    <p class="text-background">Create stunning content for your YouTube channel with high-quality video editing. We ensure your videos are polished, engaging, and optimized for maximum viewer retention and growth.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 photo-container">
+                    <img src="images/page3Photo3.jpg" alt="Photo" class="img-fluid photo">
+                </div>
+                <div class="col-md-6 text-container">
+                    <p class="text-background">Learn the art of mobile video editing with our comprehensive CapCut courses. Perfect for beginners, our tutorials will guide you through creating professional-quality videos right from your phone.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<!-- Footer section with contact button -->
+<footer>
+    <button id="contactBtn">CONTACT US</button>
+</footer>
+
+<!-- Contact Form PopUp -->
+<div id="contactPopUp" class="form" style="display: none;">
+    <div class="formContent">
+        <span class="span_form" id="spanForm">&times;</span>
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="reason">Reason for Contacting</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Select a reason</option>
+                    <option value="service">Photo Editor query</option>
+                    <option value="support">Video Editor query</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+ <script src="js/script.js" defer></script> 
+
+</body>
+</html>
